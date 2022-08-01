@@ -149,6 +149,18 @@ footer{
     grid-template-areas: "header" "nav" "section" "footer";
 }
 
+.foto {
+    filter: grayscale(100%);
+    transition: all 2s;
+}
+
+.foto:hover {
+    filter: grayscale(0);transform: scale(1.5);
+}
+
+.fotoCont {
+    overflow: hidden;
+}
 /* Area style de page.html--------------------------------------------------------------*/
 
 
