@@ -1,26 +1,20 @@
 body {
-  background-color: plum;
   color: rgb(255, 255, 255);
   font-family: "Playfair Display", serif;
+  position: relative;
 }
 
 #main {
   width: 100%;
   height: 600px;
+  min-height: 100vh;
 }
 
-header,
-footer,
-section,
-nav {
-  border-radius: 15px;
-}
 
 section {
   background-color: plum;
 }
 
-header,
 footer,
 nav {
   background-color: plum;
@@ -28,24 +22,19 @@ nav {
 
 h1 {
   display: inline;
+  color: rgb(141, 78, 141);
 }
 
-ul li {
-  display: inline;
-}
 
-ul {
-  list-style-type: none;
+article {
+  background-color: rgb(141, 78, 141);
+  border-radius: 5px;
+  text-align: center;
 }
-
-a,
-button {
+article button {
   text-decoration: none;
   color: #9a58e6;
-}
-
-button {
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: white;
   padding: 3px;
 }
@@ -55,6 +44,10 @@ button {
   font-weight: bold;
   padding: 5px;
   margin: 5px;
+}
+
+.redes:hover {
+  background-color: rgb(230, 228, 228)
 }
 
 nav {
@@ -71,20 +64,14 @@ nav ul a {
   padding: 10px;
 }
 
-nav ul {
-  margin-left: -20px;
-}
-
-article {
-  background-color: rgb(141, 78, 141);
-  border-radius: 15px;
-  text-align: center;
-}
 
 img {
   width: 100px;
   height: 100px;
-}
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25%;
+  }
 
 section {
   padding: 20px;
@@ -93,6 +80,9 @@ section {
 .item {
   background-color: rgb(141, 78, 141);
   color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5%;
 }
 
 header {
@@ -101,9 +91,6 @@ header {
 
 footer {
   grid-area: footer;
-    bottom: 0;
-    width: 100%;
-    position: relative;
 }
 
 section {
@@ -119,13 +106,6 @@ nav {
 
 header {
   grid-area: header;
-}
-
-#ulNav {
-  display: grid;
-  grid-area: nav;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
 }
 
 section {
@@ -152,6 +132,21 @@ footer {
   grid-template-areas: "header" "nav" "section" "footer";
 }
 
+.botonComprar {
+  width: 10em;
+  height: 5ex;
+  background-color: plum ;
+  border: 2px solid rgb(167, 4, 58);
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.botonComprar:hover {
+  background-color: rgb(184, 34, 221);
+}
+
 .foto {
   filter: grayscale(100%);
   transition: all 2s;
@@ -166,8 +161,31 @@ footer {
   overflow: hidden;
 }
 
-/* Area style de page.html--------------------------------------------------------------*/
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.titulo:hover{
+  background-color: rgba(221, 160, 221, 0.452);
+  transition: 0.5s;
+}
+
+/* Area style de page.html-sociales-------------------done----------------------------------------*/
+.pageSociales{
+  display: flex;
+  height: 700px;
+  background-color: plum;
+}
+
+/* Area style de user.html-usuario------------------------------------------------------------*/
+h2{
+  background-color: plum;
+}
+
 /* -------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 320px) {
   #main {
     display: grid;
