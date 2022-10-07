@@ -10,6 +10,11 @@ body {
   min-height: 100vh;
 }
 
+header,
+footer,
+section,
+nav {
+  border-color: #9a58e6}
 
 section {
   background-color: plum;
@@ -22,9 +27,14 @@ nav {
 
 h1 {
   display: inline;
-  color: rgb(141, 78, 141);
 }
 
+ul {
+  display: inline;
+}
+ul li {
+  list-style-type: none;
+}
 
 article {
   background-color: rgb(141, 78, 141);
@@ -46,10 +56,6 @@ article button {
   margin: 5px;
 }
 
-.redes:hover {
-  background-color: rgb(230, 228, 228)
-}
-
 nav {
   font-size: large;
   font-weight: 500;
@@ -64,6 +70,9 @@ nav ul a {
   padding: 10px;
 }
 
+nav ul {
+  margin-left: -20px;
+}
 
 img {
   width: 100px;
@@ -71,7 +80,7 @@ img {
   margin: 5px;
   padding: 5px;
   border-radius: 25%;
-  }
+}
 
 section {
   padding: 20px;
@@ -106,6 +115,13 @@ nav {
 
 header {
   grid-area: header;
+}
+
+#ulNav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
 }
 
 section {
@@ -183,10 +199,13 @@ footer {
 h2{
   background-color: plum;
 }
+/**--------------------------------------------------------------------------------------*/
+.leyenda_pagos{
+  font-size: larger;
 
+}
 /* -------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
   #main {
     display: grid;
     grid-template-columns: auto;
@@ -233,4 +252,5 @@ h2{
 #inputheader {
     display: block;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
